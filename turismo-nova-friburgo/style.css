@@ -1,0 +1,27 @@
+body {
+     background-color: rgb(255, 223, 233);
+}
+.imagem-1 {
+    width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+.imagem-2 {
+    width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+h1 {
+    color:rgb(177, 13, 67);
+}
+p {
+    color: rgb(122, 43, 43);
+}
+h2 {
+  color:rgb(233, 35, 101);  
+}
+header {
+   text-align: center;
+}
