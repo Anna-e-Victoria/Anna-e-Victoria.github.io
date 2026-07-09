@@ -16,7 +16,7 @@ header h1 {
  
 header p {
     text-align: center;
-    font-size: .8em;
+    font-size: .3em;
     margin-bottom:80px;
 }
  
@@ -29,7 +29,7 @@ header a {
  header li:first-child,
  header li:hover{
     background-color: #ff2176;
- }
+ } 
 .laranja {
     background-color: #ff6e1b;
 }
@@ -40,5 +40,23 @@ header a {
     padding-bottom: 40px;
     width: 500px; 
     list-style: none;
-
  }
+.branca {
+
+}
+
+.boxes{
+    display:flex;
+    flex-wrap: wrap;
+    width:930px;
+    border:1px solid rgb(0, 0, 0); 
+    margin: 0 auto;
+}
+ 
+.box{
+    border: 1px solid black;
+    width:300px;
+    margin:4px;
+    padding: 3px;
+    box-sizing: border-box;
+}

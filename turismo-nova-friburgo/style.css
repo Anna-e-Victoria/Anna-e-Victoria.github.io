@@ -25,3 +25,39 @@ h2 {
 header {
    text-align: center;
 }
+.imagem {
+     width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+.imagen-b{
+     width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+.imagen-c{
+     width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+.imagen-d{
+     width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+.imagen-e{
+     width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
+.imagen-f{
+     width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
