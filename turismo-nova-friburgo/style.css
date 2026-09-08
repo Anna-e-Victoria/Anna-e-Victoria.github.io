@@ -1,5 +1,7 @@
+
 body {
-     background-color: rgb(255, 223, 233);
+     background-color:#f6d8d6;
+     font-family: Arial, Helvetica, sans-serif;
 }
 .imagem-1 {
     width: 30%;         
@@ -13,8 +15,15 @@ body {
     object-fit: cover;   
     border-radius: 8px; 
 }
+.imagem-3 {
+    width: 30%;         
+    height: 30%;        
+    object-fit: cover;   
+    border-radius: 8px; 
+}
 h1 {
-    color:rgb(177, 13, 67);
+color: crimson;
+
 }
 p {
     color: rgb(122, 43, 43);
@@ -24,8 +33,12 @@ h2 {
 }
 header {
    text-align: center;
+   background-color:#fcf7d9;
+   border:2px dashed #604734 ;
+   border-radius: 15px;
+
 }
-.imagem {
+.imagem-a {
      width: 30%;         
     height: 30%;        
     object-fit: cover;   
@@ -55,9 +68,127 @@ header {
     object-fit: cover;   
     border-radius: 8px; 
 }
-.imagen-f{
-     width: 30%;         
+
+h1{
+  text-decoration-color: crimson;
+}
+h2{
+    text-decoration-color: rgb(192, 7, 44);
+}
+a{
+    text-decoration: none;
+}
+.imginicio{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.intro{
+   display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-b; 
+}
+.intro1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    background-color: #ffa6c5;
+    border-radius: 15px;
+}
+.intro2{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 2%;
+     background-color: #ffa6c5;
+     border-radius: 15px;
+}
+footer{
+    color: #604734;
+    background-color: #ffa6c5;
+    border-radius: 3px;
+    text-align: center;
+}
+h5{
+    color:rgb(122, 43, 43);
+}
+.pontotopo{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.espacoarp, .casasuica, .trespicos{
+    width: 40%;
+    height: 35%;
+    background-color:#ffa6c5;
+    justify-content: center;
+    margin: 2%;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+.pontobaixo{
+   display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;  
+}
+.jardimnego, .teleferico, .country{
+    width: 40%;
+    height: 35%;
+    background-color:#ffa6c5;
+    justify-content: center;
+    margin: 2%;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+table{
+   width:100%;
+}
+th, td{
+    border: 1px solid #604734;
+    padding: 8px 12px; 
+    text-align: left;
+    background-color: #604734;
+    border-radius: 7px;
+    color: #fcf7d9;
+}
+th{
+    background-color: #604734;
+    border-radius: 7px;
+}
+h3{
+    color:  rgb(122, 43, 43);
+}
+#fond,#feijo, #queijo, #truta{
+    display: flex;
+    justify-content: center;
+}
+.gastro{
+    width: 40%;
+    height: 35%;
+    background-color:#ffa6c5;
+    justify-content: center;
+    margin: 2%;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    
+}
+
+.gastronomia{
+    width: 30%;         
     height: 30%;        
     object-fit: cover;   
     border-radius: 8px; 
+}
+.bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
