@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#fffeef;
+}
+p, ol{
+    color:#CDECB2;
+}
+h1{
+    color: #108d2f;
+    display: flex;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.intro1,nav{
+    background-color: #34CBC5;
+    margin: 2% 5%;
+    padding: 4%;
+    border-radius: 10px;
+
+}
+.intro,nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    background-image: url(Captura\ de\ tela\ 2026-09-27\ 101836.png);
+     background-size: cover; 
+     background-position: center;
+     background-repeat: no-repeat; 
+     height: 100px;
+}
+a{
+    text-decoration: none;
+    color: #6ab63f;
+}
+h3,h2{
+    color:#0C71C6 ;
+}
+main{
+    background-color: #adf56e;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 15px;
+}
+h2,h3{
+    display: flex;
+    justify-content: center;
+}
