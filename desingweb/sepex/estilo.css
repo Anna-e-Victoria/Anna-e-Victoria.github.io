@@ -46,3 +46,9 @@
             background-color:#3f22a8;
             transition: all 500ms ease-in;
         }
+.programacao_cards{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction:column;
+}
