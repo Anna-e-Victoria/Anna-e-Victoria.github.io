@@ -1,0 +1,79 @@
+body {
+    display: block;
+    margin: 8px;
+    background-color: #310479;
+}
+h1,p,h2,h3{
+    color:#F2E0A4;
+    text-align: center;
+}
+.button{
+    background-color: darkmagenta;
+    padding: 10px 30px; 
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 240, 190);
+    display: flex;
+    align-items: center;
+}
+.button:hover{
+    background-color: darkmagenta;
+    transform: scale(1.1);
+    color:rgb(0, 0, 105);
+    transition: all .2s;
+}
+
+        div{
+            border:1px solid #f00;
+            width:500px;
+            height:400px;
+            box-shadow:10px 20px 10px #333;
+        }
+        h2{
+            text-shadow:5px 2px 4px #333;
+        }
+        img:hover{
+             filter:grayscale(.90);
+             transform:rotate(3600deg);
+             transition: all 3s;
+
+        }
+        div:hover{
+            transform: translatex(130px);
+            transition: transform 1s;
+        }
+        .button{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(255, 240, 190);
+            background-color: #651566;
+            padding: 10px 30px;
+            margin:13px ;
+            border-radius: 15px;
+             box-shadow:6px 2px 5px #250438;
+             transition: all 500ms ease-in;
+        }
+        .button:hover{
+            transform: scale(1.1);
+            background-color:#3f22a8;
+            transition: all 500ms ease-in;
+        }
+#programacao_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+.card{
+     width:  25%;
+    background-color:#A230A4;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 15px;
+    border: 3px solid #651566;
+    box-sizing: border-box;
+   text-align: center;
+   
+}
