@@ -1,0 +1,270 @@
+@media (max-width:480px){
+body{
+header,main,footer{
+    width: 100%;
+     display: block;
+    margin: 8px;
+    background-color: #310479;
+}
+h3{
+    color:#F2E0A4;
+    text-align: center;
+}
+.menu{
+     color:#F2E0A4;
+     display:flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+#p:hover,#i:hover, #pp:hover, #ii:hover{
+    text-decoration: underline;
+  text-decoration-color: #F2E0A4;
+  text-decoration-thickness: 2px;
+}
+h2{
+     border: 3px solid #250438;
+     padding: 5%;
+      color:#F2E0A4;
+}
+header{
+    border: 3px solid #250438; 
+}
+span{
+    color: #3230a4;
+}
+ 
+        h2{
+            text-shadow:5px 2px 4px #333;
+        }
+        
+        
+        .button{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(255, 240, 190);
+            background-color: #651566;
+            padding: 10px 30px;
+            margin:13px ;
+            border-radius: 15px;
+             box-shadow:6px 2px 5px #250438;
+             transition: all 500ms ease-in;
+        }
+      .button:hover{
+            color: #cac5e5;
+            transform: scale(1.1);
+            background-color:#3f22a8;
+            transition: all 500ms ease-in;
+        }
+#programacao_cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+.cardpulsante, .card{
+     width:  25%;
+    background-color:#A230A4;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 15px;
+    border: 3px solid #651566;
+    box-sizing: border-box;
+   text-align: center;
+   transition: all 500ms ease-in;
+}
+.cardpulsante{
+    animation: a;
+}
+@keyframes pulso{
+     0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card:hover{
+   transition: all 500ms ease-in;
+   transform: scale(1.1);
+        }
+
+.inscricao{
+    text-align: center;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h2{
+    opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+.icone {
+  display: inline-block; 
+  animation: a; 
+}
+}
+}
+
+
+@media (min-width:481px){
+   body {
+    display: block;
+    margin: 8px;
+    background-color: #310479;
+}
+h3{
+    color:#F2E0A4;
+    text-align: center;
+}
+.menu{
+     color:#F2E0A4;
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+#p:hover,#i:hover, #pp:hover, #ii:hover{
+    text-decoration: underline;
+  text-decoration-color: #F2E0A4;
+  text-decoration-thickness: 2px;
+}
+h2{
+     border: 3px solid #250438;
+     padding: 5%;
+      color:#F2E0A4;
+}
+header{
+    border: 3px solid #250438; 
+}
+span{
+    color: #3230a4;
+}
+ 
+        h2{
+            text-shadow:5px 2px 4px #333;
+        }
+        
+        
+        .button{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(255, 240, 190);
+            background-color: #651566;
+            padding: 10px 30px;
+            margin:13px ;
+            border-radius: 15px;
+             box-shadow:6px 2px 5px #250438;
+             transition: all 500ms ease-in;
+        }
+      .button:hover{
+            color: #cac5e5;
+            transform: scale(1.1);
+            background-color:#3f22a8;
+            transition: all 500ms ease-in;
+        }
+#programacao_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+.cardpulsante, .card{
+     width:  25%;
+    background-color:#A230A4;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 15px;
+    border: 3px solid #651566;
+    box-sizing: border-box;
+   text-align: center;
+   transition: all 500ms ease-in;
+}
+.cardpulsante{
+    animation: pulso 1s infinite ease-in-out;
+}
+@keyframes pulso{
+     0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card:hover{
+   transition: all 500ms ease-in;
+   transform: scale(1.1);
+        }
+
+.inscricao{
+    text-align: center;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h2{
+    opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.icone {
+  display: inline-block; 
+  animation: girar 2s linear infinite; 
+}
+}
+/*@media (min-width:480px) and (max-width:991px){
+    body{
+    background-color:rgb(255, 127, 180) ;
+}
+}
+@media (min-width:992px) and (max-width:992px){
+    body{
+    background-color:rgb(172, 127, 255) ;
+}*/
