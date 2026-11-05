@@ -1,0 +1,26 @@
+/*Questão 1-*/.banner img {
+width: 100%;
+filter:grayscale(100%);
+transition:ease-in;
+}
+.banner img:hover {
+filter:none;
+}
+/*Questão 2- O flex wrap pode ser importante paea que os elementos quebrem de linha e sigam o tamanho do quadrado estipulado no css.
+ */
+.cards {
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+flex-wrap:wrap;
+}
+/*Questão 3*/
+.botao {
+background-color: #2457a6;
+transition:all 5seg;
+}
+.botao:hover {
+background-color: blue;
+transform:scale(1.5);
+}
