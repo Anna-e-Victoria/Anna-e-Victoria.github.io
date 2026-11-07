@@ -1,7 +1,7 @@
 /*Questão 1-*/.banner img {
 width: 100%;
 filter:grayscale(100%);
-transition:ease-in;
+transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 .banner img:hover {
 filter:none;
@@ -12,7 +12,7 @@ filter:none;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:10px;
+gap:20px;
 flex-wrap:wrap;
 }
 /*Questão 3*/
@@ -23,4 +23,314 @@ transition:all 5seg;
 .botao:hover {
 background-color: blue;
 transform:scale(1.5);
+}
+/*Questão 4*/
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.destaque {
+    animation: pulsar 2s infinite;
+}
+/*Questão 5*/
+.secao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 600px) {
+    .secao {
+        grid-template-columns: 1fr;
+    }
+} 
+/*
+  A tag utilizada para representar o conteúdo principal da página é <main>.   A tag indicada para agrupar links de navegação é <nav>.   No Bootstrap, a classe utilizada para criar um conteiner com largura responsiva é container (ou container-fluid).   A classe Bootstrap utilizada para organizar elementos em uma linha do sistema de grid é row.   A classe Bootstrap utilizada para criar uma coluna que ocupa metade da largura disponível em telas médias é col-md-6.*/
+
+/*Parte 2 em diante ^^*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3 {
+    color: #1a237e;
+    font-weight: 700;
+}
+
+
+
+.header {
+    background-color: #0d47a1;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.main-content {
+    min-height: calc(100vh - 160px);
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav__brand {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* (Parte 3 com dica de CSS do escalfoni) */
+.nav__link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+    transform: scaleX(1);
+}
+
+
+.badge-custom {
+    background-color: #5c6bc0;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.event-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+     width: 30%;
+     align-items: center;
+     justify-content: center;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.event-card__image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card__badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+.event-card__image {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.9) contrast(1.05);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.event-card:hover .event-card__image {
+    filter: brightness(1);
+    transform: scale(1.03);
+}
+
+.event-card__body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.event-card__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.event-card__info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+}
+
+.event-card__text {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.event-card__button {
+    align-self: flex-start;
+    border-radius: 20px;
+    padding: 8px 20px;
+    background-color: #0d47a1;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.event-card__button:hover {
+    background-color: #1565c0;
+    transform: scale(1.03);
+}
+
+.featured-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgba(13, 71, 161, 0.15);
+    perspective: 1000px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: pulsarSuave 3s infinite ease-in-out;
+}
+
+.featured-card:hover {
+
+    transform: rotateY(5deg) scale(1.01);
+    box-shadow: 0 15px 35px rgba(13, 71, 161, 0.25);
+}
+
+@media (min-width: 768px) {
+    .featured-card {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .featured-card__image-wrapper,
+    .featured-card__content {
+        flex: 1;
+    }
+}
+
+.featured-card__image-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.featured-card__image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    filter: saturate(1.1) brightness(0.95);
+    transition: filter 0.3s ease;
+}
+
+.featured-card:hover .featured-card__image {
+    filter: saturate(1.2) brightness(1.05);
+}
+
+.featured-card__title {
+    font-size: 1.75rem;
+    margin-top: 10px;
+}
+
+.featured-card__meta {
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.featured-card__btn {
+    border-radius: 20px;
+    padding: 10px 24px;
+    background-color: #5e35b1;
+    border: none;
+    margin-top: 10px;
+}
+
+.featured-card__btn:hover {
+    background-color: #4527a0;
+}
+
+@keyframes pulsarSuave {
+    0% {
+        box-shadow: 0 10px 30px rgba(13, 71, 161, 0.15);
+    }
+    50% {
+        box-shadow: 0 15px 40px rgba(94, 53, 177, 0.3);
+    }
+    100% {
+        box-shadow: 0 10px 30px rgba(13, 71, 161, 0.15);
+    }
+}
+
+
+.text-theme {
+    color: #0d47a1;
+}
+
+@media (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav__list {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .featured-card {
+        animation: none; 
+    }
 }
